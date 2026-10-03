@@ -1,0 +1,8 @@
+{
+  "mcpServers": {
+    "field-service-cloud": {
+      "type": "http",
+      "url": "https://www.janmarsystems.com/mcp"
+    }
+  }
+}
