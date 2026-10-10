@@ -1,16 +1,15 @@
 {
   "$schema": "https://json.schemastore.org/claude-code-plugin-manifest.json",
   "name": "field-service-cloud-workflows",
-  "displayName": "Field Service Cloud Workflows",
-  "version": "1.28.0",
-  "description": "Connect Claude to Field Service Cloud and add a single-manager Operations brief plus customer-ready Monthly Client Report workflows.",
+  "version": "1.32.0",
+  "description": "Connect Claude to Field Service Cloud to review manager and jobsite records in a workspace and prepare operations reviews and monthly client reports.",
   "author": {
     "name": "Janmar Systems",
     "url": "https://github.com/JanmarSystems"
   },
   "homepage": "https://www.janmarsystems.com/fieldservicecloud/solutions",
-  "repository": "https://github.com/JanmarSystems/field-service-cloud-workflows",
-  "license": "Apache-2.0",
   "skills": "./skills/",
-  "mcpServers": "./.mcp.json"
+  "mcpServers": "./.mcp.json",
+  "repository": "https://github.com/JanmarSystems/field-service-cloud-workflows",
+  "license": "Apache-2.0"
 }
