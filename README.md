@@ -8,7 +8,7 @@ Four sample skills are included:
 
 - **Connector Instructions** guides everyday questions about saved records and follow-up.
 - **Workspace** opens manager-portfolio Operations or single-jobsite Property when the connection advertises workspace tools. Choose the period, records and photos before drafting. Expand a record to request Original and Translation in your chosen language; the saved text stays unchanged.
-- **Operations** prepares a single manager's Morning Brief or Manager Operations Review, separating recorded work from current follow-up.
+- **Operations** prepares a server-current Operations Brief for the returned authorized scope, an intentionally dated Morning Brief or an exact-period Manager Operations Review, separating recorded work from current follow-up.
 - **Monthly Client Report** prepares Word/PDF client reports and separate office notes for one jobsite and calendar month. It works independently of Operations.
 
 Each report workflow loads its included connector guidance. Keep office wording, source selections and photo captions through refinement. Inspect selected images and every requested report page before sharing files. Report preparation does not approve or send a report. If workspace tools are unavailable, ordinary read-only questions and report skills remain usable.
@@ -16,12 +16,13 @@ Each report workflow loads its included connector guidance. Keep office wording,
 Example requests:
 
 - "Open the Field Service Cloud workspace and wait for my manager, property and period choices."
-- "Give me a morning brief for [manager] for [local date]."
+- "Give me the current operations brief for [manager]."
+- "Prepare an intentionally dated morning brief for [manager] for [local date]."
 - "Review operations for [manager] from [start date] through [end date]."
 - "Prepare the monthly client report for [jobsite] for [month/year], with selected photos."
 
-Clarify ambiguous properties, managers and dates. Missing records do not prove no work occurred. Manager selection does not broaden account permissions. Connect only one Field Service Cloud connection in a conversation and replace older copies of these skills when updating. If connection fails, check company MCP access, the intended account/company and OAuth connection, then start a fresh conversation.
+Clarify ambiguous properties and managers, and missing or relative dates for intentionally dated requests. Current briefs use the returned company date, capture time and time zone without a date question. Missing records do not prove no work occurred. Manager selection does not broaden account permissions. Connect only one Field Service Cloud connection in a conversation and replace older copies of these skills when updating. If connection fails, check company MCP access, the intended account/company and OAuth connection, then start a fresh conversation.
 
-The production server address is `https://www.janmarsystems.com/mcp`. Private development test connections are separate and are not included. These instructions match the verified portable source 6.14.0; the Claude distribution is 1.32.0. The hosted workspace requires its corresponding server release. This archive alone does not establish production deployment or directory acceptance.
+The production server address is `https://www.janmarsystems.com/mcp`. Private development test connections are separate and are not included. These instructions match the locally reviewed portable source candidate 6.15.0; current Operations Brief native-host acceptance remains pending. The hosted workspace requires its corresponding server release. This archive alone does not establish production deployment or directory acceptance.
 
 Publisher: [Janmar Systems](https://www.janmarsystems.com/fieldservicecloud/solutions). [Support](https://www.janmarsystems.com/Help/ContactUs), [Privacy](https://www.janmarsystems.com/fieldservicecloud/privacy), [Terms](https://www.janmarsystems.com/fieldservicecloud/terms). Source: https://github.com/JanmarSystems/field-service-cloud-workflows. Repository visibility and provider submission are separate release steps. Licensed under Apache-2.0; see LICENSE.
