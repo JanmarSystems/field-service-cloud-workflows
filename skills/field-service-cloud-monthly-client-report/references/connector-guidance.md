@@ -39,7 +39,9 @@ Scheduled stops are plans, recorded visits are visit evidence, task records desc
 
 Use totals and calculated comparisons within their returned scope. Do not add overlapping visit/activity/exception arrays or treat an exception subset as all visits. Preserve server-computed metrics; use only the selected workflow's supported complete-record groupings. Keep prior-workday coverage separate from older rolling review records. Do not infer urgency, cause, promises or completed work from missing fields.
 
-Form summaries are not individual answers: retrieve relevant response detail when the question needs it. Irrigation history records system changes, not necessarily a visit, repair or completion. Material quantities keep their saved item/unit meaning. Pesticide and reporting flags describe saved state; they are not live certifications of compliance. Unknown fields remain unknown.
+Daily time comparisons require a positive saved plan of at most 1,440 minutes for one crew/service day. `planned_time_not_comparable_for_day` flags negative or over-day plans; it does not declare the saved budget invalid. Keep any returned valid comparison subset within its scope. Null planned time, means or variance are unavailable, not zero, and do not establish missed or partially completed service, a labor overrun or work quality. Preserve actual visit facts and the returned saved-plan explanation.
+
+Form summaries are not individual answers: retrieve relevant response detail when the question needs it. A null response score means no saved score, even when the form has a populated maximum or default; do not present that maximum as a grade or calculate a result from it. Irrigation history records system changes, not necessarily a visit, repair or completion. Material quantities keep their saved item/unit meaning. Pesticide and reporting flags describe saved state; they are not live certifications of compliance. Unknown fields remain unknown.
 
 ## Use photos as the evidence actually returned
 
