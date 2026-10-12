@@ -29,7 +29,7 @@ Use only the returned authorized current non-staged Maintenance crew scope. It m
 
 ## Non-negotiable Manager Operations Review objective
 
-For a retrospective internal review of one manager and an exact inclusive period of at most 31 days, read [Manager Operations Review](references/manager-operations-review.md) before retrieving records or composing the report. That reference owns MOR interpretation, writing and final review.
+For a retrospective internal review of one manager and an exact inclusive period of at most 31 days, read [Manager Operations Review](references/manager-operations-review.md) before retrieving records or composing the report. Lead with the account manager's customer updates, property follow-up, meaningful accomplishments and established upcoming dates, then explain the selected period's service results. The reference owns MOR interpretation, current follow-up retrieval, writing and final review. This report does not use the Operations Brief's daily crew-handoff template.
 
 ## Make the brief's next step easy to scan
 
