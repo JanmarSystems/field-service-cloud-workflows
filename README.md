@@ -6,6 +6,7 @@ Skills and a read-only connection that let Claude work with your [Field Service 
 
 - You need a Field Service Cloud account.
 - A company Admin must enable MCP access for your company first.
+- Word/PDF reports and selected-photo reports require Claude file tools that can create, download and view the files. The skills check those capabilities before retrieving selected photos.
 - Each person connects with their own account and approves read-only access. The connection only returns records that account is already allowed to see; selecting a manager does not widen those permissions.
 - Installing the plugin does not grant access to any data.
 
@@ -43,8 +44,8 @@ If the workspace is not available on your connection, the other skills still wor
 
 ## Data handling and privacy
 
-- This plugin contains only instructions and one remote connection setting. It has no code, hooks, local servers or software installs.
-- The only service it connects to is Field Service Cloud at `https://www.janmarsystems.com/mcp`. The skills do not contact any other service.
+- This plugin contains four instruction-based skills and one remote MCP connection setting. It has no bundled executables, hooks or local servers.
+- The only remote MCP server configured by this plugin is Field Service Cloud at `https://www.janmarsystems.com/mcp`. Claude uses its built-in file tools to prepare reports and retrieve selected photo links returned by Field Service Cloud.
 - The connection is read-only. It cannot change Field Service Cloud records, schedule work, or send reports or email.
 - Records returned to Claude can include customer and contact names, jobsite addresses, crew names, task notes, inspection answers and selected photos. They are handled inside your Claude conversation under your Claude settings. Report files are created in Claude's own file workspace with Claude's built-in file tools.
 - A company Admin can turn off MCP access, and each person can disconnect the connector at any time. Removing the plugin does not delete Field Service Cloud records or files in your Claude conversations.
