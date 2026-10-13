@@ -45,7 +45,7 @@ If the workspace is not available on your connection, the other skills still wor
 ## Data handling and privacy
 
 - This plugin contains four instruction-based skills and one remote MCP connection setting. It has no bundled executables, hooks or local servers.
-- The only remote MCP server configured by this plugin is Field Service Cloud at `https://www.janmarsystems.com/mcp`. Claude uses its built-in file tools to prepare reports and retrieve selected photo links returned by Field Service Cloud.
+- The only remote MCP server configured by this plugin is Field Service Cloud at `https://www.janmarsystems.com/mcp`. Claude uses its built-in file tools to prepare reports and save selected photo bytes returned by Field Service Cloud.
 - The connection is read-only. It cannot change Field Service Cloud records, schedule work, or send reports or email.
 - Records returned to Claude can include customer and contact names, jobsite addresses, crew names, task notes, inspection answers and selected photos. They are handled inside your Claude conversation under your Claude settings. Report files are created in Claude's own file workspace with Claude's built-in file tools.
 - A company Admin can turn off MCP access, and each person can disconnect the connector at any time. Removing the plugin does not delete Field Service Cloud records or files in your Claude conversations.
