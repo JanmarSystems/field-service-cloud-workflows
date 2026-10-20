@@ -1,8 +1,8 @@
 {
   "$schema": "https://json.schemastore.org/claude-code-plugin-manifest.json",
   "name": "field-service-cloud-workflows",
-  "version": "1.41.2",
-  "description": "Connect Claude to Field Service Cloud to review manager and jobsite records in a workspace and prepare operations reviews and monthly client reports.",
+  "version": "1.42.0",
+  "description": "Connect Claude to Field Service Cloud to review manager and jobsite records in a workspace and prepare operations reviews and monthly client reports and customer estimate proposals.",
   "author": {
     "name": "Janmar Systems",
     "url": "https://github.com/JanmarSystems"

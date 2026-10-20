@@ -5,6 +5,9 @@ description: Interpret read-only Field Service Cloud records for jobsite, task, 
 
 # Field Service Cloud connector guidance
 
+For a customer estimate, quote or proposal from an Extra, use the bundled `field-service-cloud-estimate-proposal` skill. Resolve the jobsite, then call `get_task_data` with `mode="work_items"`, `propertyId` and exact Extra `taskId`, without dates/cursor. Reuse `workOrderLines.estimatePricing` groups/lines/totalAmount. Lists omit pricing: find candidates with `workItemKinds=["extra"]` and `openOnly=true`, then read the exact Extra. Do not declare estimate pricing unavailable from list previews. Confirm currency, tax and terms; never add group and detail amounts. The existing subscriber InvoiceData estimate API is not an MCP tool.
+
+
 ## Reader-facing output
 
 Use judgment about whether status updates would help the user while working. Keep the finished answer focused on the requested work result, without retrieval or process narration. End after that answer; do not append an offer to retrieve more records.
@@ -29,6 +32,8 @@ For an Operations brief, Manager Operations Review or Monthly Client Report, fol
 Operations' normal three-business-operation ceiling remains local to that skill; MOR and Monthly retain their own necessary paging/detail/photo follow-ups. Batch compatible requests and reuse returned evidence. Keep scope, filters and page size unchanged when following `nextCursor`; an incomplete page or highlight subset is not complete history. Stop on denial, an expired or nonadvancing cursor, or repeated failure, and honor returned retry guidance.
 
 Distinguish unavailable detail, an available empty collection and an available zero count. Compare exact child counts and truncation flags with previews before saying the detail is complete. Retrieve omitted content only when it could change the requested answer or work decision. Present material limitations according to the selected audience; do not put office diagnostics into client files.
+
+Read workflow envelopes and each child result separately. In jobsite operations/service evidence, `payload.reporting` contains totals and `payload.recordedVisits.record` contains visit/review arrays and its own page; a drilldown failure does not invalidate successful totals. In monthly evidence, `tasks`, `completedTasks` and `updatedTasks` are overlapping created/completed/updated-date sets, while `forms` contains submitted answers. Deduplicate tasks by taskId and retain each child's outcome, paging and truncation. Reporting work-item counts combine completion-date extras and update-date issues; they are not a period-end backlog. Crew-hours measure crew time; man-hours measure employee labor and remain unavailable when incomplete. Keep contract completions separate from visits. An assignment identifies responsibility, not the performer, and a planned service date is not a task deadline.
 
 ## Interpret tasks and dates
 
